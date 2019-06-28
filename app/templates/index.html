@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>What to Wear Running</title>
+        <link href="static/style.css" rel="stylesheet">    
+    </head>
+    <body>
+        <div class = "intro">
+            <h1>What should you wear running?!</h1>
+            <p>Running in the cold is very different from running in the heat and humidity.  Use this tool to help determine what clothes are best for your weather conditions!</p>
+        </div>
+        <div class = "flex">
+            <form method = "post" action = "sendWeather">
+                <label for = "temperature">What is the temperature right now? </label>
+                <input type = "text" name = "temperature">
+                </br>
+                </br>
+                <label for = "humidity">Is there humidity right now?</label>
+                <div class = "flex1">
+                    <input type = "radio" name = "humidity" value = "yes">Yes
+                    <input type = "radio" name = "humidity" value = "no">No
+                </div>
+                <label for = "wind">How is the wind right now?</label>
+                <div class = "flex1">
+                    <input type = "radio" name = "wind" value = "no_wind">No wind
+                    <input type = "radio" name = "wind" value = "light_wind">Light wind
+                    <input type = "radio" name = "wind" value = "heavy_wind">Heavy wind
+                </div>
+                <label for = "intensity">What type of run are you planning on doing?</label>
+                <div class = "flex1">
+                    <input type = "radio" name = "intensity" value = "long_run">Easy Run
+                    <input type = "radio" name = "intensity" value = "long_run">Long Run
+                    <input type = "radio" name = "intensity" value = "hard_workout">Hard Workout
+                    <input type = "radio" name = "intensity" value = "race">Race
+                </div>
+                <div>
+                <!--<label for = "conditions">It is...</label>-->
+                <!--<input type = "radio" for = "conditions" value = "clear">Clear-->
+                <!--<input type = "radio" for = "conditions" value = "partly_clear">Partly Cloudy-->
+                <!--<input type = "radio" for = "conditions" value = "overcast">Overcast-->
+                <!--<input type = "radio" for = "conditions" value = "rain">Rain-->
+                <!--<input type = "radio" for = "conditions" value = "snow">Snow-->
+                <!--</br>-->
+                </div>
+                <input type = "submit">
+                </br>
+            </form>
+        </div>
+    </body>
+</html>
